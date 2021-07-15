@@ -9,6 +9,9 @@ body {
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+}
 
 /* Styling Header part */
 
@@ -36,8 +39,7 @@ header {
     margin-top: 0;
     font-weight: bolder;
 }
-a {
-    text-decoration: none;
+.watch_link a {
     font-size: 13px;
     line-height: 40px;
     color: #FFFFFF;
@@ -98,6 +100,10 @@ main {
 }
 .highlights {
     margin-bottom: 50px;
+    
+}
+.highlights a {
+    color: black;
 }
 .news {
     display: flex;
