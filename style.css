@@ -50,6 +50,11 @@ a {
     width: 150px;
     height: 40px;
     color: #FFFFFF;
+    transition: 1.3s;
+}
+.watch_link:hover {
+    background-color: black;
+    transform: skew(-15deg);
 }
 .fa-arrow-right {
     font-size: 20px;  
@@ -59,14 +64,16 @@ a {
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
 }
-.players {
+.players,.highlights {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
-    width: 1000px;
+    width: 1050px;
     margin-top: 35px;
 }
 .player {
@@ -89,6 +96,24 @@ main {
     color: #6C6C6C;
     font-weight: lighter;
 }
+.highlights {
+    margin-bottom: 50px;
+}
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 7px 8px 19px 1px rgba(0,0,0,0.74);
+    -webkit-box-shadow: 7px 8px 19px 1px rgba(0,0,0,0.74);
+    -moz-box-shadow: 7px 8px 19px 1px rgba(0,0,0,0.74);
+}
+.highlights img {
+    width: 100%;
+    border-radius: 6px;
+}
+
 
 /* styling footer section */
 
@@ -127,10 +152,9 @@ footer img {
         width: 385px;
         padding-left: 30px;
     }
-    .players {
+    .players,.highlights{
         grid-template-columns: 1fr;
-        width: 90%;
-     
+        width: 90%; 
     }
 
 }
@@ -150,7 +174,7 @@ footer img {
         width: 410px;
         height: 380px;
     }
-    .players {
+    .players,.highlights {
         grid-template-columns: 1fr 1fr;
         width: 90%;
      
